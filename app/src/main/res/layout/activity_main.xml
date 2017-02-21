@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="a2016_2.pooa.iff.br.receitando.MainActivity"
+    android:background="#61e6d0">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bem Vindo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="gravity"
+        android:textColor="@color/abc_search_url_text_selected"
+        android:textColorHighlight="@color/abc_primary_text_disable_only_material_dark"
+        android:textSize="@dimen/abc_action_bar_stacked_max_height"
+        android:id="@+id/Tela_bem_vindo"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Receitando"
+        android:id="@+id/TextView_receitando"
+        android:textColorHighlight="@color/abc_primary_text_disable_only_material_dark"
+        android:textSize="28dp"
+        android:layout_below="@+id/Tela_bem_vindo"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastrar"
+        android:id="@+id/button_cadastrar"
+        android:layout_marginBottom="67dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/Tela_bem_vindo"
+        android:layout_alignEnd="@+id/Tela_bem_vindo" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entrar"
+        android:id="@+id/button_entrar"
+        android:layout_alignTop="@+id/button_cadastrar"
+        android:layout_toLeftOf="@+id/TextView_receitando"
+        android:layout_toStartOf="@+id/TextView_receitando" />
+
+</RelativeLayout>
