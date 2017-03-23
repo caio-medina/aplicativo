@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="a2016_2.pooa.iff.br.receitando.Buscar"
+    tools:context=".activity.activity.activity.activity.Buscar"
     android:background="#61e6d0">
 
     <TextView
@@ -28,7 +28,7 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editText6"
+        android:id="@+id/ed_Busca_receita"
         android:layout_alignBottom="@+id/textView11"
         android:layout_alignRight="@+id/textView12"
         android:layout_alignEnd="@+id/textView12"
@@ -50,7 +50,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Buscar"
-        android:id="@+id/button"
+        android:id="@+id/bt_Buscar"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="89dp" />

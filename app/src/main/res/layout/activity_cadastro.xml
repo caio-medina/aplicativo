@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="a2016_2.pooa.iff.br.receitando.cadastro"
+    tools:context=".activity.activity.activity.activity.Cadastro"
     android:background="#61e6d0"
     android:id="@+id/Tela_cadastro"
     >
@@ -29,9 +29,9 @@
         android:layout_height="wrap_content"
         android:text="Nome:"
         android:id="@+id/textView"
-        android:layout_alignBottom="@+id/editText"
-        android:layout_toLeftOf="@+id/editText"
-        android:layout_toStartOf="@+id/editText"
+        android:layout_alignBottom="@+id/ed_Cadastro_nome"
+        android:layout_toLeftOf="@+id/ed_Cadastro_nome"
+        android:layout_toStartOf="@+id/ed_Cadastro_nome"
         android:layout_marginRight="28dp"
         android:layout_marginEnd="28dp"
         android:textSize="20dp"
@@ -40,7 +40,7 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editText"
+        android:id="@+id/ed_Cadastro_nome"
         android:layout_marginTop="72dp"
         android:layout_below="@+id/TextView_cadastro"
         android:layout_alignLeft="@+id/TextView_cadastro"
@@ -52,21 +52,33 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editText2"
+        android:id="@+id/ed_Cadastro_email"
         android:layout_centerVertical="true"
-        android:layout_alignLeft="@+id/editText"
-        android:layout_alignStart="@+id/editText"
+        android:layout_alignLeft="@+id/ed_Cadastro_nome"
+        android:layout_alignStart="@+id/ed_Cadastro_nome"
         android:layout_toStartOf="@+id/button2"
-        android:layout_alignRight="@+id/editText"
-        android:layout_alignEnd="@+id/editText"
-        />
+        android:layout_alignRight="@+id/ed_Cadastro_nome"
+        android:layout_alignEnd="@+id/ed_Cadastro_nome"
+        android:inputType="text" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/ed_Cadastro_senha"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignLeft="@+id/ed_Cadastro_email"
+        android:layout_alignStart="@+id/ed_Cadastro_email"
+        android:layout_alignRight="@+id/ed_Cadastro_email"
+        android:layout_alignEnd="@+id/ed_Cadastro_email" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Email:"
         android:id="@+id/textView2"
-        android:layout_alignBottom="@+id/editText2"
+        android:layout_alignBottom="@+id/ed_Cadastro_email"
         android:layout_alignLeft="@+id/textView"
         android:layout_alignStart="@+id/textView"
         android:textSize="20dp"
@@ -77,25 +89,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Confirmar"
-        android:id="@+id/button_confirmar"
-        android:layout_marginBottom="53dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/textView2"
-        android:layout_alignStart="@+id/textView2"
-        android:layout_toLeftOf="@+id/editText2"
-        android:layout_toStartOf="@+id/editText2"
-        android:textSize="8dp" />
-
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Facebook"
-        android:id="@+id/button_facebook"
+        android:id="@+id/bt_cadastro_confirmar"
         android:textSize="8dp"
-        android:layout_alignTop="@+id/button_confirmar"
-        android:layout_toRightOf="@+id/editText"
-        android:layout_toEndOf="@+id/editText" />
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/ed_Cadastro_senha"
+        android:layout_alignStart="@+id/ed_Cadastro_senha"
+        android:layout_marginTop="53dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -108,16 +107,5 @@
         android:layout_marginTop="37dp"
         android:textSize="20dp"
         android:textColor="@color/abc_search_url_text_selected"/>
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:ems="10"
-        android:id="@+id/editText3"
-        android:layout_alignBottom="@+id/textView3"
-        android:layout_toLeftOf="@+id/button_facebook"
-        android:layout_alignLeft="@+id/editText2"
-        android:layout_alignStart="@+id/editText2" />
 
 </RelativeLayout>

@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="a2016_2.pooa.iff.br.receitando.MainActivity"
+    tools:context=".activity.activity.activity.activity.MainActivity"
     android:background="#61e6d0">
 
     <TextView
@@ -38,19 +38,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Cadastrar"
-        android:id="@+id/button_cadastrar"
+        android:id="@+id/bt_Receita_cadastro"
         android:layout_marginBottom="67dp"
         android:layout_alignParentBottom="true"
         android:layout_alignRight="@+id/Tela_bem_vindo"
-        android:layout_alignEnd="@+id/Tela_bem_vindo" />
+        android:layout_alignEnd="@+id/Tela_bem_vindo"
+        android:onClick="chamaTelaCadastro"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Entrar"
-        android:id="@+id/button_entrar"
-        android:layout_alignTop="@+id/button_cadastrar"
+        android:id="@+id/bt_entrar"
+        android:layout_alignTop="@+id/bt_Receita_cadastro"
         android:layout_toLeftOf="@+id/TextView_receitando"
-        android:layout_toStartOf="@+id/TextView_receitando" />
+        android:layout_toStartOf="@+id/TextView_receitando"
+        android:onClick="chamaTelaLogin"/>
 
 </RelativeLayout>

@@ -8,18 +8,18 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".activity.activity.activity.activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".cadastro" />
-        <activity android:name=".Receita" />
-        <activity android:name=".Cadastrar_Receita" />
-        <activity android:name=".Buscar" />
-        <activity android:name=".Login"></activity>
+        <activity android:name=".activity.activity.activity.activity.Cadastro" />
+        <activity android:name=".activity.activity.activity.activity.Receita" />
+        <activity android:name=".activity.activity.activity.activity.Cadastrar_Receita" />
+        <activity android:name=".activity.activity.activity.activity.Buscar" />
+        <activity android:name=".activity.activity.activity.activity.Login"></activity>
     </application>
 
 </manifest>

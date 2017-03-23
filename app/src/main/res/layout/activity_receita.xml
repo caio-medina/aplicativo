@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="a2016_2.pooa.iff.br.receitando.Receita"
+    tools:context=".activity.activity.activity.activity.Receita"
     android:background="#61e6d0"
     android:id="@+id/Tela_receita">
 
@@ -25,7 +25,7 @@
     <RadioGroup
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:id="@+id/radioGroup"
+        android:id="@+id/rd_Receita"
         android:layout_centerVertical="true"
         android:layout_alignRight="@+id/textView4"
         android:layout_alignEnd="@+id/textView4">
@@ -76,28 +76,30 @@
             android:layout_height="wrap_content"
             android:text="Outros"
             android:id="@+id/radioB_outros"
-            android:layout_below="@+id/radioGroup"
-            android:layout_alignLeft="@+id/radioGroup"
-            android:layout_alignStart="@+id/radioGroup" />
+            android:layout_below="@+id/rd_Receita"
+            android:layout_alignLeft="@+id/rd_Receita"
+            android:layout_alignStart="@+id/rd_Receita" />
     </RadioGroup>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Cadastrar"
-        android:id="@+id/button_cadastrar"
-        android:layout_below="@+id/radioGroup"
-        android:layout_alignLeft="@+id/radioGroup"
-        android:layout_alignStart="@+id/radioGroup"
-        android:layout_marginTop="32dp" />
+        android:id="@+id/bt_Receita_cadastro"
+        android:layout_below="@+id/rd_Receita"
+        android:layout_alignLeft="@+id/rd_Receita"
+        android:layout_alignStart="@+id/rd_Receita"
+        android:layout_marginTop="32dp"
+        android:onClick="chamaTelaCadastrar_Receita"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Buscar"
-        android:id="@+id/button_buscar"
-        android:layout_alignTop="@+id/button_cadastrar"
-        android:layout_toRightOf="@+id/radioGroup"
-        android:layout_toEndOf="@+id/radioGroup" />
+        android:id="@+id/bt_Receita_busca"
+        android:layout_alignTop="@+id/bt_Receita_cadastro"
+        android:layout_toRightOf="@+id/rd_Receita"
+        android:layout_toEndOf="@+id/rd_Receita"
+        android:onClick="chamaTelaBusca"/>
 
 </RelativeLayout>
